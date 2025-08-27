@@ -44,3 +44,5 @@ Database: MySQL / SQLite
 Optional UI: Swing/JavaFX (for a graphical interface)
 
 Version Control: GitHub for code and documentation management
+<img width="1210" height="822" alt="Screenshot 2025-08-26 123101" src="https://github.com/user-attachments/assets/ef909568-0a40-4c99-b22c-7a5225c4d444" />
+
