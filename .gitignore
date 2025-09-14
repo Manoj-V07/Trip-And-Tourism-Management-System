@@ -1,0 +1,13 @@
+# Compiled class files
+*.class
+
+# IDE files
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# Database temp
+*.db
+*.sql~
