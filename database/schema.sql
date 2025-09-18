@@ -27,4 +27,4 @@ CREATE TABLE bookings (
     status ENUM('booked', 'cancelled') DEFAULT 'booked',
     FOREIGN KEY (user_id) REFERENCES users(user_id),
     FOREIGN KEY (package_id) REFERENCES packages(package_id)
-);
+); 
