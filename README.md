@@ -1,48 +1,71 @@
-# Trip-And-Tourism-Management-System
-📌 Project Summary
+# Trip & Tourism Management System
 
-The Travel and Tourism Management System is a Java-based application designed to simplify and automate the process of managing travel services for both customers and administrators (travel agencies).
+## Project Overview
+The **Trip & Tourism Management System** is a modular, scalable Java application designed to manage travel bookings, users, and packages efficiently. It provides a clear separation of concerns between the **backend logic**, **database operations**, and **user interface**, making it suitable for both small-scale and enterprise-level applications.  
 
-The system allows customers to search for travel packages by destination, price, or duration, view details, make bookings, and receive instant confirmations. It also supports booking cancellations and maintains customer records for easy access.
+This system follows **OOP principles** like encapsulation, inheritance, and polymorphism, ensuring maintainability, scalability, and readability.
 
-For administrators, the system provides features to add, update, and delete travel packages, manage customer details, and generate reports such as booking statistics and revenue summaries. This ensures efficient management of travel services and reduces manual errors.
+---
 
-The project is designed using Object-Oriented Programming (OOP) principles such as encapsulation, inheritance, polymorphism, abstraction, and composition.
+## Features
+- **User Management**
+  - Register as a Customer or Admin
+  - Secure authentication with password hashing
+  - Role-based access control (Admin vs Customer)
+- **Booking Management**
+  - Book and cancel packages
+  - Track active bookings for customers
+  - Admin can view all bookings
+- **Package Management**
+  - Admin can create, update, and deactivate travel packages
+  - Customers can view active packages with available seats
+- **Utilities & Validation**
+  - Input validation for email, username, and password
+  - Date formatting and helper functions
+- **Database Connectivity**
+  - MySQL integration for persistent data storage
+  - Connection pooling and management
+- **Exception Handling**
+  - Centralized custom exception handling (`TripOrganizerException`)
+- **Logging & Caching**
+  - Application logging for key events
+  - In-memory caching for optimized performance
 
-Encapsulation secures sensitive data like user details.
+---
 
-Inheritance is applied where Customer and Admin extend from User.
+## Tech Stack
+- **Language:** Java 17+  
+- **Database:** MySQL 8+  
+- **Build Tool:** Maven  
+- **IDE:** IntelliJ IDEA / Eclipse  
+- **Libraries:** JDBC (for database connectivity), Java Standard Library  
 
-Polymorphism is used in methods like login() and searchPackages().
+---
 
-Abstraction helps define common behaviors in the User class.
+## Project Structure
+src/
+├── com/triporganiser/
+│ ├── Admin.java
+│ ├── Booking.java
+│ ├── Customer.java
+│ ├── Main.java
+│ ├── Package.java
+│ ├── User.java
+│ ├── DAO/
+│ │ ├── UserDAO.java
+│ │ ├── BookingDAO.java
+│ │ └── PackageDAO.java
+│ ├── Services/
+│ │ ├── BookingService.java
+│ │ └── LoginService.java
+│ ├── Utils.java
+│ ├── InputValidator.java
+│ ├── Constants.java
+│ ├── Logger.java
+│ ├── CacheManager.java
+│ ├── SessionManager.java
+│ └── TripOrganizerException.java
 
-Composition ensures that a Booking cannot exist without a Package.
 
-🔹 Key Features
-
-Customer Functions: Search packages, book/cancel packages, payment & booking confirmation.
-
-Admin Functions: Manage packages, manage customers, generate reports.
-
-Database Support: Store details of users, packages, and bookings.
-
-Scalability: Can be extended with payment gateways, notifications, and mobile app integration.
-
-🔹 Target Users
-
-Customers/Travelers – Individuals or families who want to explore and book packages.
-
-Travel Agencies/Admins – Staff who manage packages, bookings, and generate reports.
-
-🔹 Technology Stack
-
-Programming Language: Java (Core + OOP concepts)
-
-Database: MySQL / SQLite
-
-Optional UI: Swing/JavaFX (for a graphical interface)
-
-Version Control: GitHub for code and documentation management
-<img width="1210" height="822" alt="Screenshot 2025-08-26 123101" src="https://github.com/user-attachments/assets/ef909568-0a40-4c99-b22c-7a5225c4d444" />
+<img width="3656" height="4828" alt="image" src="https://github.com/user-attachments/assets/e11b6f9a-69e0-49bc-9538-1970f9c25f23" />
 
