@@ -68,21 +68,26 @@ public class Main {
         System.out.println("❌ Invalid credentials.");
     }
 
-    private static void showAdminMenu() {
+   private static void showAdminMenu() {
         System.out.println("\n--- Admin Menu ---");
         System.out.println("1. View All Packages");
         System.out.println("2. Create New Package");
-        System.out.println("3. Logout");
+        System.out.println("3. Update Package");
+        System.out.println("4. Delete Package");
+        System.out.println("5. Logout");
         System.out.print("Enter choice: ");
         int choice = readInt();
 
         switch (choice) {
             case 1 -> viewAllPackages();
             case 2 -> createPackage();
-            case 3 -> logout();
+            case 3 -> updatePackage();
+            case 4 -> deletePackage();
+            case 5 -> logout();
             default -> System.out.println("Invalid option.");
         }
-    }
+}
+
 
     private static void showCustomerMenu() {
         System.out.println("\n--- Customer Menu ---");
