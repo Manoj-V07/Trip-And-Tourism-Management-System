@@ -43,29 +43,15 @@ This system follows **OOP principles** like encapsulation, inheritance, and poly
 ---
 
 ## Project Structure
-src/
-├── com/triporganiser/
-│ ├── Admin.java
-│ ├── Booking.java
-│ ├── Customer.java
-│ ├── Main.java
-│ ├── Package.java
-│ ├── User.java
-│ ├── DAO/
-│ │ ├── UserDAO.java
-│ │ ├── BookingDAO.java
-│ │ └── PackageDAO.java
-│ ├── Services/
-│ │ ├── BookingService.java
-│ │ └── LoginService.java
-│ ├── Utils.java
-│ ├── InputValidator.java
-│ ├── Constants.java
-│ ├── Logger.java
-│ ├── CacheManager.java
-│ ├── SessionManager.java
-│ └── TripOrganizerException.java
+backend/src/com/triporganiser
+
+Admin.java , Booking.java , Customer.java , DBConnection.java , Main.java , Package.java , User.java .
+
+database 
+
+schema.sql
 
 
-<img width="3656" height="4828" alt="image" src="https://github.com/user-attachments/assets/e11b6f9a-69e0-49bc-9538-1970f9c25f23" />
+<img width="633" height="917" alt="image" src="https://github.com/user-attachments/assets/4c859c82-5577-4eef-af13-1a955902275c" />
+
 
